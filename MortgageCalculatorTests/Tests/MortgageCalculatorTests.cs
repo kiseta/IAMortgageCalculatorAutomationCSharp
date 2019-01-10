@@ -27,11 +27,11 @@ namespace MortgageCalculatorTests
 			MortgageCalculatorPage.NavigateToUrl();
 
 			MortgageCalculatorPage.CalculatePayment(purchasePrice)
-														.WithDownPayment(downPayment)
-														.WithInterestRate(interestRate)
-														.WithAmortization(amortizationYears)
-														.WithPaymentFrequency(paymentFrequency)
-														.CalculatePayment();
+					.WithDownPayment(downPayment)
+					.WithInterestRate(interestRate)
+					.WithAmortization(amortizationYears)
+					.WithPaymentFrequency(paymentFrequency)
+					.CalculatePayment();
 
 			//TO-DO: Refactor - element detected displayed even if not visible to the user
 			Assert.IsTrue(MortgageCalculatorPage.ResultIsDisplayed, "Result is not displayed");
