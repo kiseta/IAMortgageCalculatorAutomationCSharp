@@ -98,7 +98,6 @@ namespace MortgageCalculatorAutomation
 
 			var CalculateButton = Driver.Instance.FindElement(By.Id("btn_calculer"));
 			CalculateButton.Click();
-
 		}
 
 		//temporary method for selecting values from Amortization drop down list,
